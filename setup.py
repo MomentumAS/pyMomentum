@@ -8,5 +8,8 @@ setup(name='pyMomentum',
       author_email='info@mtas.com.tr',
       license='MIT',
       packages=['pyMomentum'],
+      install_requires=[
+          'requests',
+      ],
       zip_safe=False
       )
