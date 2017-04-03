@@ -1,7 +1,7 @@
 .. figure:: https://mtas.com.tr/wp-content/uploads/2016/03/logoMTAS.png
    :alt: Momentum AS Logo
 
-   alt text
+   Momentum Teknoloji AS
 
 pyMomentum
 ==========
@@ -20,8 +20,34 @@ Available Libraries
 
    -  Sanal Santral API V1.0.0
 
-## Details about Libraries
---------------------------
+--------------
+
+Installation
+------------
+
+To install latest stable version of our library, simply run:
+
+::
+
+    pip install pyMomentum
+
+If you installed before, to update simply run:
+
+::
+
+    pip install pyMomentum --upgrade
+
+To install library from GitHub master branch:
+
+::
+
+    pip install git+https://github.com/MomentumAS/pyMomentum.git
+
+To update from GitHub master branch:
+
+::
+
+    pip install git+https://github.com/MomentumAS/pyMomentum.git --upgrade
 
 sms
 ~~~
