@@ -10,6 +10,30 @@ This repository contains python libraries developed and used by Momentum AS. You
   - **Providers** currently available are:
     - Sanal Santral API V1.0.0
 
+---
+## Installation
+
+To install latest stable version of our library, simply run:
+```
+pip install pyMomentum
+```
+
+If you installed before, to update simply run:
+```
+pip install pyMomentum --upgrade
+```
+
+To install library from GitHub master branch
+```
+pip install git+https://github.com/MomentumAS/pyMomentum.git
+```
+To update from GitHub master branch
+```
+pip install git+https://github.com/MomentumAS/pyMomentum.git --upgrade
+```
+
+
+---
 ## Details about Libraries
 ---
 ### sms
