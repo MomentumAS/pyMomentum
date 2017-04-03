@@ -1,6 +1,6 @@
 import requests
 
-from .providers import SMSProvider, SMSProviderNotConfiguredException, SMSProviderAPIException, \
+from pyMomentum.sms.providers.providers import SMSProvider, SMSProviderNotConfiguredException, SMSProviderAPIException, \
     SMSProviderValueException
 
 

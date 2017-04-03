@@ -1,15 +1,14 @@
 from setuptools import setup
 
 setup(name='pyMomentum',
-      version='0.1',
+      packages=['pyMomentum','pyMomentum.sms','pyMomentum.sms.providers'],
+      version='0.0.8',
       description='Python libraries developed by Momentum',
       url='https://github.com/MomentumAS/pyMomentum',
-      download_url='https://github.com/MomentumAS/pyMomentum/archive/0.1b.zip',
       keywords=['momentum', 'library', 'sms'],
       author='Momentum Teknoloji AS',
       author_email='info@mtas.com.tr',
       license='MIT',
-      packages=['pyMomentum'],
       install_requires=[
           'requests',
       ],
