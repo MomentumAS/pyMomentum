@@ -1,7 +1,7 @@
-class SMS():
+class SMS:
     smsProvider = None;
 
-    def __init__(self,provider):
+    def __init__(self, provider):
         self.smsProvider = provider
 
     def getProviderName(self):
@@ -15,4 +15,3 @@ class SMS():
 
     def status(self, *args, **kwargs):
         return self.smsProvider.getStatus(*args, **kwargs)
-

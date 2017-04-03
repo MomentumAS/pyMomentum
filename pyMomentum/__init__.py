@@ -1,1 +1,1 @@
-from pyMomentum import sms
+from pyMomentum.sms import sms

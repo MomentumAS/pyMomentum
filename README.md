@@ -20,15 +20,24 @@ If you are located in Turkey and sending advertorial texts to end users, you sho
 
 Only provider in the library is **Sanal Santral** at the moment. Here is an example usage:
 ```python
+from pyMomentum.sms import sms
+from pyMomentum.sms.providers.sanalsantral import SanalSantralSMSProvider
+
 # create a provider object, username is your username and password is API key. smsHeader should be one of your registered headers (alphanumerical from information of SMS)
-provider = sms.SanalSantralSMSProvider(username="test", password="test", smsHeader="test")
+provider = SanalSantralSMSProvider(username="test", password="test", smsHeader="test")
 # create an sms object with the provider above
-sms = sms.SMS(provider)
+mysms = sms.SMS(provider)
 # send an sms
-sms_id = sms.send(smsNumber="123456789", smsText="Message Text")
+sms_id = mysms.send(smsNumber="123456789", smsText="Message Text")
+
+#>>> sms_id
+#{'message_id': 77300600}
+
 # sms_id is numerical value that you can track your send report
 # you can store this id in a database so you can reach send report later
-sms.status(message_id=sms_id) 
+
+mysms.status(message_id=sms_id['message_id'])
+
 # this will return a list like:
 # {'result_detail': 'Pending', 'results': [{'status_detail': 'Send report operation started', 'status': '25', 'number': '90500000000'}], 'result_code': '5'}
 # you should expect a pending status a bit later
