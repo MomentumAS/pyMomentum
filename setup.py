@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(name='pyMomentum',
       packages=['pyMomentum','pyMomentum.sms','pyMomentum.sms.providers'],
-      version='0.1.3',
+      version='0.1.4',
       description='Python libraries developed by Momentum',
       url='https://github.com/MomentumAS/pyMomentum',
       keywords=['momentum', 'library', 'sms'],
