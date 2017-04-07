@@ -11,10 +11,10 @@ from pyMomentum.sms.providers.providers import SMSProvider, SMSProviderNotConfig
 # You should provide your username, api key as password and your header
 # **********************************************************************************************************
 # Example usage:
-# sms = sms.SMS(sms.SanalSantralSMSProvider(username="test", password="test", smsHeader="test"))
-# sms.getBalance() -> gets current balance of prepaid account
-# sms.getProviderName() -> gets provider name
-# sms.sendSMS(number,text) -> to send an sms
+# mysms = sms.SMS(SanalSantralSMSProvider(username="test", password="test", smsHeader="test"))
+# mysms.getBalance() -> gets current balance of prepaid account
+# mysms.getProviderName() -> gets provider name
+# mysms.sendSMS(number,text) -> to send an sms
 # **********************************************************************************************************
 
 class SanalSantralSMSProvider(SMSProvider):
