@@ -8,7 +8,8 @@ This repository contains python libraries developed and used by Momentum AS. You
 ## Available Libraries
 - **sms** is a library for sending text messages using provider API's.
   - **Providers** currently available are:
-    - Sanal Santral API V1.0.0
+    - Sanal Santral SMS API V1.0.0
+    - MutluCell SMS API
 
 ---
 
@@ -42,7 +43,7 @@ You should create a provider with its parameters and then you can simply use **s
 
 If you are located in Turkey and sending advertorial texts to end users, you should provide a opt-out option. Please learn your local regulations about sending short messages.
 
-Only provider in the library is **Sanal Santral** at the moment. Here is an example usage:
+Available providers in the library are **Sanal Santral** and **MutluCell** at the moment. Here is an example usage:
 ```python
 from pyMomentum.sms import sms
 from pyMomentum.sms.providers.sanalsantral import SanalSantralSMSProvider
